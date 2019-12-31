@@ -18,6 +18,18 @@ This repository includes the following files
 docker 소스코드
 iptables & ipset rules
 ```
+### Docker app
+Docker 서버에 올라가는 app을 다운받기 위해서는 다음과 같은 방법으로 pull 을 할 수 있다.
+
+main Server
+```
+docker pull dongwook2014/drop:main
+```
+
+replica Server
+```
+docker pull dongwook2014/drop:test
+```
 
 ## Acknowledgments
 
