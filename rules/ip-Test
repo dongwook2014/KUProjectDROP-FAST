@@ -1,0 +1,12 @@
+$TTL    10
+@       IN      SOA    dropfast.net.    root.dropfast.net. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         10 )       ; Negative Cache TTL
+
+;
+@       IN      NS     dropfast.net.
+205     PTR             dropfast.net
+205     PTR             www.dropfast.net

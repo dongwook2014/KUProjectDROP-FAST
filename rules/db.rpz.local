@@ -1,0 +1,19 @@
+$TTL 300
+
+@		IN SOA  localhost. need.to.know.only. (
+                       201702121 ; Serial number
+                       60        ; Refresh every minute
+                       60        ; Retry every minute
+                       432000    ; Expire in 5 days
+                       60 )      ; negative caching ttl 1 minute
+		IN NS   LOCALHOST.
+
+deteque.com			IN CNAME rpz-passthru.
+*.deteque.com			IN CNAME rpz-passthru.
+spamhaus.org			IN CNAME rpz-passthru.
+*.spamhaus.org			IN CNAME rpz-passthru.
+32.25.195.194.32.rpz-ip		IN CNAME rpz-passthru.		; whitelist 34.194.195.25/32
+32.71.219.156.35.rpz-ip		IN CNAME rpz-passthru.		; whitelist 35.156.219.71/32
+
+example.com			IN CNAME .			; local block against example.com
+*.example.com			IN CNAME .			; local block against example.com
